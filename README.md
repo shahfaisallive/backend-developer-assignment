@@ -23,15 +23,18 @@ Before you begin, ensure you have met the following requirements:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/payment-gateway-integration.git
+   git clone https://github.com/shahfaisallive/backend-developer-assignment
 
 2. Navigate to the project directory:
+   ```bash
     cd backend-developer-assignment
 
 3. Install dependencies:
+   ```bash
     npm install
 
 4. Configure environment variables:
+   ```bash
     PORT=4000
     MONGODB_URI=your_mongodb_uri
     PAYPAL_CLIENT_ID=your_paypal_client_id
@@ -45,4 +48,5 @@ To start the server, run:
 npm start
 
 To open the payment form.
-Visit http://localhost:<PORT>/payment-form
+
+Visit http://localhost:4000/payment-form
