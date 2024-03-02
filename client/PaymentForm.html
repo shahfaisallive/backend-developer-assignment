@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+    <h2>Payment Form</h2>
+    <form id="payment-form" action="/api/payment" method="post">
+        <div>
+            <label for="fullName">Customer Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div>
+            <label for="amount">Price (amount):</label>
+            <input type="text" id="amount" name="amount" required>
+        </div>
+        <div>
+            <label for="currency">Currency:</label>
+            <select id="currency" name="currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="THB">THB</option>
+                <option value="HKD">HKD</option>
+                <option value="SGD">SGD</option>
+                <option value="AUD">AUD</option>
+            </select>
+        </div>
+        <div>
+            <label for="cardName">Credit Card Holder Name:</label>
+            <input type="text" id="cardName" name="cardName" required>
+        </div>
+        <div>
+            <label for="cardNumber">Credit Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+        </div>
+        <div>
+            <label for="cardExpMonth">Expiration Month:</label>
+            <input type="text" id="cardExpMonth" name="cardExpMonth" required>
+        </div>
+        <div>
+            <label for="cardExpYear">Expiration Year:</label>
+            <input type="text" id="cardExpYear" name="cardExpYear" required>
+        </div>
+        <div>
+            <label for="cardCVV">CCV:</label>
+            <input type="text" id="cardCVV" name="cardCVV" required>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
